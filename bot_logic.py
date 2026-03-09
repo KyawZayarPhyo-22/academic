@@ -107,7 +107,7 @@ def get_bot_response(bot_type: str, user_message: str, user_language: str, user_
     }
 
     data = {
-        "model": "arcee-ai/trinity-large-preview:free",
+        "model": "nvidia/nemotron-nano-12b-v2-vl:free",
         "messages": [
             {"role": "system", "content": f"{system_prompt} IMPORTANT: Always respond in the exact same language the user writes in."},
             {"role": "user", "content": user_message}
