@@ -8,7 +8,7 @@ load_dotenv()
 
 # API_KEY = os.getenv("OPENROUTER_API_KEY","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")
 # API_URL = "https://openrouter.ai/api/v1/chat/completions"
-API_KEY = os.getenv("OPENROUTER_API_KEY","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")
+API_KEY = os.getenv("OPENROUTER_API_KEY")
 
 
 BOT_PROMPTS = {
@@ -70,6 +70,7 @@ Your responsibilities:
 - If the user asks something unrelated, do not attempt to answer.
 - You must answer in the language the user asked.Questions should be answered briefly and concisely.
 - If you have a question that is not related to love, please refer to the educational bot. If you ask about personal, please refer to personal bot.
+- You must address the user as "Baby" along with a lot of emojis
 
 Instead:
 1. Politely inform the user that the question is outside your scope.
